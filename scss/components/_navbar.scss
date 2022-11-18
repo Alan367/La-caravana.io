@@ -1,0 +1,102 @@
+.navbar {
+    width: 100%;
+    &-collapse {
+      
+      transition-duration: 1s;
+      &-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 30px;
+        text-align: center;
+        margin-top: auto;
+        display: flex;
+        gap: 2rem;
+        padding-right: 2rem;
+        &-link {
+          color: $light;
+          text-decoration: none;
+          list-style: none;
+        }
+        &-titulo {
+          margin-top: 30%;
+          &-img {
+            max-width: 350px;
+            max-height: 67px;
+          }
+        }
+        &-footer {
+          width: 100%;
+          margin-top: 20%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-self: end;
+          justify-content: center;
+          &-img {
+            width: 80%;
+          }
+        }
+      }
+    }
+}
+.collapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92vh;
+}
+.logo{
+    animation: logo ease-in-out 5s;
+     @keyframes logo {
+      0% {
+          transform: translate(0,-20px);
+          opacity: 0;
+      }
+      20% {
+          transform: translate(0,-20px);
+          opacity: 1;
+      }
+      30% {
+          transform: translate(0,0);
+          opacity: 1;
+      }
+      90% {
+          transform: translate(0,0);
+          opacity: 1;
+      }
+      100% {
+          transform: translate(0,0);
+          opacity: 1;
+      }  
+  }
+}
+@media only screen and (min-width: 999px){
+    .navbar {
+        width: 100%;
+        &-brand {
+          padding-left: 2rem;
+        }
+        &-collapse {
+          
+          &-nav {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            margin: 0;
+            &-titulo {
+              display: none;
+            }
+            &-footer {
+              display: none;
+              margin: 0;
+            }
+          }
+      }
+    }
+    .collapse{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        min-height: 60px; 
+    }
+}

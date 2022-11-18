@@ -5,6 +5,7 @@
     align-items: center;
     &-img1 {
       max-width: 350px;
+      font-size: 50px;
     }
     &-p {
       margin-top: 10px;
@@ -27,7 +28,7 @@
     &-contenedor {
       margin: 30px;
       &-boton {
-        border: solid 2px rgba(242, 201, 76, 1);
+        border: solid 2px $gold;
         padding: 0;
         width: 150px;
         font-size: 20px;
@@ -36,8 +37,9 @@
         padding-right: 30px;
         text-align: center;
         align-self: flex-end;
-        color: rgba(242, 201, 76, 1);
+        color: $gold;
         text-decoration: none;
+        @include box_shadow(3);
       }
     }
   }
@@ -65,8 +67,9 @@
           max-width: none;
         }
         &-b {
+          border-radius: 15px;
           display: block;
-          @include border-image();
+          ;
         }
       }
     }

@@ -1,5 +1,8 @@
 // Include any default variable overrides here (though functions won't be available)
-$dark: #000000;
+$dark: #030202;
+$light: #f9f6f6;
+$gold: rgba(242, 201, 76, 1);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
@@ -9,7 +12,8 @@ $dark: #000000;
 @import "./pages/contact";
 @import "./pages/menu";
 @import "./pages/menu_2";
-
+@import "./components/footer";
+@import "./components/navbar";
 
 
 

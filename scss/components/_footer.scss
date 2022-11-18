@@ -1,0 +1,75 @@
+.pizza {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-img {
+    width: 80%;
+  }
+}
+.footer {
+  width: 350px;
+  margin-top: auto;
+  background-color: $dark;
+  color: $light;
+  background-image: none;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+}
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+@media only screen and (min-width: 999px) {
+.pizza-img {
+        width: 800px;
+}
+.footer{
+        width: 100%;
+}
+.buttons {
+  min-width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+}
